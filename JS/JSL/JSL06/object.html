@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>JSL-object</title>
+    </head>
+    <body>
+        <button onclick="btWrite()">書く</button>
+        <button onclick="btCheck()">長さを見る</button>
+        <div id="result"></div>
+
+        <script>
+            const result=document.getElementById("result");
+            const useColor= 0.5 ;
+            class Pen{
+                constructor(length){
+                    this.length = length ;
+                }
+                write(){
+                    if(this.length>=useColor){
+                        this.length -= useColor;
+                        return "書きました";
+                    }else{
+                        return "書けませんでした"
+                    }
+                }
+            }
+            let pen = new Pen(3);
+
+            const btWrite=()=>{
+                let msg=pen.write();
+                result.textContent=msg;
+            };
+            const btCheck=()=>{
+                result.textContent=`長さは${pen.length}です`;
+            };
+        </script>
+    </body>
+</html>

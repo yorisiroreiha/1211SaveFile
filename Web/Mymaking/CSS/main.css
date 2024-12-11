@@ -1,0 +1,55 @@
+.hachi-maru-pop-regular {
+    font-family: "Hachi Maru Pop", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+.allContain{
+    width: 90%;
+    margin:0 auto;
+}
+body{
+    background-color: #05aa56;
+}
+header{
+    height: 150px;
+    /*background-image: url();*/
+    background-color: #7ff;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    font-size: 50px;
+}
+div ul{
+    font-size: 1.8vw;
+    padding: 3px 2vw;
+    background: #eee;
+    display: flex;
+    justify-content: center;
+
+}
+div ul li a{
+    display: block;
+    padding:5px 5vw;
+    margin:5px 2vw;
+    background: #66e;
+    color:#fff;
+    text-decoration: none;
+    border:1px solid #333;    
+    border-radius: 5px;
+}
+footer ul{
+    padding: 3px 1vw;
+    background: #eee;
+    display: flex;
+    justify-content: space-between;
+}
+footer ul:nth-child(even){
+    padding: 3px 1vw;
+    background: #eee;
+    display: flex;
+    flex-direction:row-reverse ;
+    justify-content: start;
+}

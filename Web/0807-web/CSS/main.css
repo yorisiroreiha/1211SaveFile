@@ -1,0 +1,50 @@
+#container{
+    width:1000px;
+    margin:0 auto;
+    font-family: "M PLUS Rounded 1c";
+    background-color: #6afffd;
+    padding:20px 0 40px;
+}
+html{
+    font-family:'Roboto','Hiragino Sans','Meiryo','Hiragino Kaku Gothic ProN',sans-serif;
+}
+h1{
+width: 800px;
+margin:0 auto 20px;
+text-align:center;
+font-size:67px;
+border:2px solid #0fffcb;
+border-radius:20px;
+padding:0 10px;
+background-color:#00ff76;
+color:#0c1fae;
+text-shadow:4px 1px 4px #b0ffb7;
+}
+table{
+    width:90%;
+    margin:20px auto 0;
+}
+td,th{
+    border:2px solid #ffef0f;
+    text-align:center;
+    color:#055300;
+    background-color: #fff;
+    font-size:50px;
+    padding:5px 0;
+}
+th{
+    color:white;
+    background-color: #00ff76;
+    text-shadow:4px 1px 2px #8ac1ff;
+}
+tr *:first-child{
+    color:#ff69b4;
+}
+tr *:last-child{
+    color:#0ba9ea;
+}
+.kosugi-maru-regular {
+    font-family: "Kosugi Maru", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }

@@ -1,0 +1,110 @@
+.hachi-maru-pop-regular {
+    font-family: "Hachi Maru Pop", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+.allContent{
+    width: 960px;
+    margin:0 auto;
+}
+header{
+    height: 150px;
+    /*background-image: url();*/
+    background-color: aquamarine;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-weight: 900;
+}
+main{
+    height: 900px;
+    background-color: #fffafa;
+}
+div ul{
+    font-size: 20px;
+    padding: 3px 2px;
+    background: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+div ul li{
+    display: block;
+    padding:5px 5px;
+    margin: 0 auto;
+    background: #66e;
+    color:#fff;
+    text-decoration: none;
+    border:1px solid #333;    
+    border-radius: 5px;
+}
+footer{
+    height: 50px;
+    /*background-image: url();*/
+    background-color:#002288;
+    background-size: cover;
+    font-size: large;
+    color:#999;
+    display: flex;
+    justify-content: end;
+    align-items: center;   
+}
+#itemBox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.items {
+    position: relative;
+    display: flex;
+    flex-direction: column; /* アイテムを縦方向に並べる */
+    flex-basis: 43%;
+    border: 1px solid #333;
+    border-radius: 5px;
+    padding: 16px 16px 30px;
+    margin: 10px;
+    background: #87cefa;
+}
+
+.fixed-list {
+    position: absolute; /* リストを絶対位置で配置 */
+    top: 16px; /* 上端からの距離を調整 */
+    left: 16px; /* 左端からの距離を調整 */
+    margin: 0; /* デフォルトのマージンをリセット */
+    padding: 0; /* デフォルトのパディングをリセット */
+    list-style-type: none; /* リストマーカーを非表示に */
+}
+
+.items p {
+    margin: 40px 0 5px; /* 上に余白を追加し、リストとの間隔を確保 */
+    font-weight: 600;
+}
+
+.items > a {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    color: #00F;
+}
+
+.items img {
+    width: 130px;
+    align-self: flex-end; /* 画像を右に寄せる */
+    margin-left: auto;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #666;
+    color: #fff;
+}

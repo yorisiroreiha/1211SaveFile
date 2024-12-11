@@ -1,0 +1,20 @@
+/*idにテーブルがついている要素*/
+#table{
+    /* テーブルの境界線を重ねて表示し、隣接するセルの境界線を1本にまとめる */
+      border-collapse:collapse;
+  }
+  /*td要素とth要素*/
+  td,th{
+    /*1px実践の罫線(色は#333)*/
+      border:1px solid #333;
+    /*上下0 左右10pxのパディング*/
+      padding:0 10px;
+    /*テキストを中央揃えにする */
+      text-align:center;
+  }
+  th{
+    /*背景色を青に設定*/
+    background-color:#0000ff;
+    /*文字色を白に設定*/
+    color:white;
+  }

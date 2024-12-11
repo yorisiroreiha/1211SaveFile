@@ -1,0 +1,13 @@
+[
+    {
+        "name":"john",
+        "age":32,
+        "part":["vocal","guitar"]
+    }
+    ,
+    {
+       "name":"john",
+        "age":31,
+        "part":["vocal","base","guitar"] 
+    }
+]

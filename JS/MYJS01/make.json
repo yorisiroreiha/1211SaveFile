@@ -1,0 +1,21 @@
+[{
+    "id" : 1,
+    "name" : "test" ,
+    "pass" : "pass" ,
+    "STR" : 1 ,
+    "CON" : 1 ,
+    "DEX" : 1 ,
+    "INT" : 1 ,
+    "SEC" : 1 ,
+    "LUC" : 1 
+},{
+    "id" : 2 ,
+    "name" : "test" ,
+    "pass" : "pass" ,
+    "STR" : 1 ,
+    "CON" : 1 ,
+    "DEX" : 1 ,
+    "INT" : 1 ,
+    "SEC" : 1 ,
+    "LUC" : 1  
+}]

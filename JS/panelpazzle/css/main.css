@@ -1,0 +1,48 @@
+#stage {
+    aspect-ratio: 1 / 1;
+    margin: 0 auto;
+    background: #eee;
+    padding: 10px;
+    display: grid;
+    gap: 4px;
+  }
+  #stage div.ok{
+    border-color:lightgreen;
+  }
+  #stage div {
+    aspect-ratio: 1 / 1;
+    font-size: 24px;
+    border: 2px solid #333;
+    border-radius: 15px;
+    background: #ddfeff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #stage div.blank {
+    background-color: #eee;
+    border-color: #eee;
+  }
+
+  #msgBox{
+    width:200px;
+    margin:10px auto;
+    font-size:20px;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+  }
+
+  #startbtn {
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+    height: 50px;
+    box-shadow: 0 3px 0 5px #777;
+  }
+  
+  #startbtn:hover {
+    cursor: pointer;
+    opacity: 0.8;
+  }

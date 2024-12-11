@@ -1,0 +1,24 @@
+h1{
+	color:blue;
+	font-size:30px;
+	background-color:#00ff7f;
+	margin:30px;
+}
+/*#ID_要素*//*ただし同一IDを使うことはできないので注意が必要*/
+#first_p{
+	margin:30px;
+	padding:30px;
+	width:390px;
+	height:80px;
+	background-color:#7fffd4;
+}
+/*.クラス名_要素*//*汎用性が高く複数使うことができる*/
+.box_p{
+	margin:30px;
+	padding:30px;
+	width:500px;
+	background-color:#7058a3;
+}
+body{
+	background-color:#68be8d;
+}

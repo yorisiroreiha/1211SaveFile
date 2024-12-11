@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="msg">名前を入力</p>
+    <input type="text" id="name" placeholder="名前">
+    <button id="btn">保存</button>
+    <script>
+    const msg=document.getElementById('msg');
+    let userName=localStorage.getItem('userName');
+    if(userName !=null){
+        msg.textContent=userName+"さん、いらっしゃい";
+    }
+    document.getElementById('btn').addEventListener('click',()=>{
+        let userName=document.getElementById('name').value;
+        localStorage.setItem('userName',userName);
+        msg.textContent='登録しました！';
+    });
+    </script> 
+</body>
+</html>

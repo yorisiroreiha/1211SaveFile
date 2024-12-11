@@ -1,0 +1,53 @@
+body{
+  background-color:aquamarine;
+}
+button{
+  width:10% ;
+  height: 5%;
+  margin:10px auto ;
+  display: flex;
+  justify-content: center;
+}
+#cardgrid{
+  width: 90%;
+  margin: 10px auto;
+  display: grid;
+  grid-template-columns: repeat(13,1fr);
+  gap:0.5vh ;
+}
+div.card{
+  aspect-ratio: 2/3;
+  background-size: contain;
+}
+div.back{
+  background-image: url(../images/z01.gif) !important;
+}
+@keyframes fadeout{
+  40%{
+    opacity: 1;
+  }100%{
+    opacity: 0;
+  }
+}
+div.fadeout{
+  animation-name: fadeout;
+  animation-duration: 2s;
+  animation-fill-mode:forwards;
+}
+@keyframes moving {
+  0% { transform: translateY(10px); }    /* 初期位置 */
+  10% { transform: translateY(20vh); } /* 10%で上に10px */
+  20% { transform: translateY(40vh); }    /* 20%で元の位置に戻る */
+  30% { transform: translateY(60vh); }  /* 30%で下に10px */
+  40% { transform: translateY(80vh); }    /* 40%で元の位置に戻る */
+  50% { transform: translateY(98vh); } /* 50%で上に10px */
+  60% { transform: translateY(80vh); }    /* 60%で元の位置に戻る */
+  70% { transform: translateY(60vh); }  /* 70%で下に10px */
+  80% { transform: translateY(40vh); }    /* 80%で元の位置に戻る */
+  90% { transform: translateY(20vh); } /* 90%で上に10px */
+  100% { transform: translateY(10px); }    /* 最終的に元の位置に戻る */
+}
+
+button.clear{
+  animation: moving 30s infinite ;
+}

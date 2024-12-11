@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>API Fetch Example</title>
+</head>
+<body>
+
+  <div id="output"></div>
+  <p id="hp"></p>
+  <h2 id="str"></h2>
+
+  <script>
+    fetch('http://192.168.2.100:8080/api/data')
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        return response.json(); // レスポンスがJSON形式の場合
+      })
+      .then(data => {
+        const outputDiv = document.getElementById('output');
+        outputDiv.innerHTML = `<pre>${JSON.stringify(data, null, 2)}</pre>`;
+        const hp = document.getElementById("hp");
+
+        // CON と DEX の値を各オブジェクトから取得し、フォーマットする
+        const hpText = data.map(item => `CON: ${item.con}, DEX: ${item.dex}`).join(', ');
+
+        hp.textContent = hpText;
+        const str = document.getElementById("str");
+        const person = data.filter(item => item.id === 1)[0]; // IDが1の人を探す
+        if (person) {
+          str.textContent = `STR: ${person.str}`; // STRを表示
+        } else {
+          str.textContent = 'ID 1の人が見つかりませんでした';
+        }
+      })
+      .catch(error => {
+        console.error('Fetch error:', error);
+      });
+
+      fetch('http://192.168.2.100:8080/api/postdata2', {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json', // JSON形式で送信
+  },
+  body: JSON.stringify({
+    id: 3,
+    name: 'new test',
+    pass: 'newpass',
+    STR: 2,
+    CON: 3,
+    DEX: 4,
+    INT: 5,
+    SEC: 6,
+    LUC: 7
+  })
+})
+  .then(response => {
+    if (!response.ok) {
+      throw new Error('Network response was not ok');
+    }
+    return response.json();
+  })
+  .then(data => console.log('Success:', data))
+  .catch(error => console.error('Error:', error));
+
+  </script>
+
+</body>
+</html>

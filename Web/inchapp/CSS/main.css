@@ -1,0 +1,39 @@
+html{
+    background-color:#ddd;
+  }
+  form{
+    width:80%;
+    aspect-ratio: 5 / 1;
+    background-color: aquamarine;
+    margin:20vh auto;
+    padding:0 3vw;
+    display:flex;
+    justify-content:space-around;
+    align-items: center;
+    font-size:3vw;
+  }
+  input{
+    border:2px inset #aaa;
+    border-radius:5px;
+    padding:7px 10px 5px;
+  }
+  input[type="number"]{
+    background-color:white;
+    width:200px;
+    text-align:right;
+  }
+  input[type="submit"]{
+    background-color:dodgerblue;
+    color:white;
+  }
+  input[type="submit"]:hover{
+    opacity: 0.8;
+  }
+  
+  @media screen and (max-width:760px){
+    form{
+      flex-direction: column;
+      aspect-ratio: 5 / 2;
+      padding:4vw 0;
+    }
+  }

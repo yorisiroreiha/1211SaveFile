@@ -1,0 +1,42 @@
+#allcontain{
+    width:700px;
+    margin:0 auto;
+    text-align: center;
+}
+header{
+    height:200px;
+    line-height: 200px;
+    background-color:pink;
+    padding:20px;
+}
+main{
+    height:500px;
+    background-color:aquamarine;
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    align-content:center;
+    align-items: center;
+}
+footer{
+    align-items: flex-start;
+    /*height: 600px;*/
+    background-color: aqua;
+    display:flex;
+    padding: 20px;
+    flex-direction: row-reverse;
+}
+footer p{
+    margin: 0 20px;
+    line-height: 1.5;
+}
+footer img{
+    width:200px;
+}
+header{
+    height:200px;
+    background-color:pink;
+}
+footer.even{
+    flex-direction: row;
+}

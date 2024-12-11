@@ -1,0 +1,42 @@
+<!DOCUMENT>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>no title</title>
+<style>
+ul{
+	display:inline-block;
+	margin-left:100px;
+	padding:20px 20px 20px 90px;
+	background:#a1d4ed;
+	border:3px dashed #ff9999;
+	box-shadow:0 0 0 7px #a1d4ed;
+	border-radius:5px;
+	position:relative;
+}
+ul::before{
+	content:url(/images/sale.png);
+	position:absolute;
+	top:-20px;
+	left:-30px;
+}
+li.new::after{
+	content:"new";
+	position:relative;
+	top:-4px;
+	font-size:0.7em;
+	background:#ff9999;
+	color:white;
+	padding:3px 5px 4px;
+	margin-left:5px;
+	border-radius:3px;
+}
+</style>
+	</head>
+	<body>
+		<ul>
+			<li class="new">AirPods Pro 30,580円</li>
+			<li class="new">AirPods(第3世代) 23,800円</li>
+			<li>AirPods(第2世代) 16,800円</li>
+	</body>
+</html>
